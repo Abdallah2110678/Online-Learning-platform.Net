@@ -1,0 +1,20 @@
+/* EnrolledCourses.css */
+
+.list-group-item {
+    cursor: pointer; /* Add hover effect */
+  }
+  
+  .list-group-item:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+  }
+  
+  .index {
+    font-size: 1.5em; /* Increase font size for index */
+  }
+  
+  .fname {
+    font-size: 0.8em; /* Decrease font size for first name */
+  }
+  
+  
+  
