@@ -15,27 +15,27 @@ const AllStudents = () => {
     return () => clearTimeout(timer);
   }, [successMessage]);
 
-  const handleDelete = async (id) => {
-    try {
-      // Make a DELETE request to your server using Axios
-      const response = await axios.delete(`${REST_API_BASE_URL}/user/students/delete/${id}`);
+  // const handleDelete = async (id) => {
+  //   try {
+  //     // Make a DELETE request to your server using Axios
+  //     const response = await axios.delete(`${REST_API_BASE_URL}/user/students/delete/${id}`);
 
-      // Check if the request was successful
-      if (response.status === 200) {
-        setSuccessMessage(`Student deleted successfully`);
+  //     // Check if the request was successful
+  //     if (response.status === 200) {
+  //       setSuccessMessage(`Student deleted successfully`);
 
-        console.log("Student deleted successfully");
-        // Update the user list after successful deletion
-        setStudents(Students.filter((Student) => Student.id !== id));
-      } else {
-        // Handle other statuses, e.g., display an error message
-        console.error("Failed to delete item");
-      }
-    } catch (error) {
-      // Handle errors, e.g., display an error message
-      console.error("Error deleting item:", error.message);
-    }
-  };
+  //       console.log("Student deleted successfully");
+  //       // Update the user list after successful deletion
+  //       setStudents(Students.filter((Student) => Student.id !== id));
+  //     } else {
+  //       // Handle other statuses, e.g., display an error message
+  //       console.error("Failed to delete item");
+  //     }
+  //   } catch (error) {
+  //     // Handle errors, e.g., display an error message
+  //     console.error("Error deleting item:", error.message);
+  //   }
+  // };
 
   useEffect(() => {
     fetch(`${REST_API_BASE_URL}/user/allstudents`)
@@ -61,14 +61,14 @@ const AllStudents = () => {
   return (
     <div className={`main ${active ? "active" : ""}`}>
       <div className="topbar">
-        <div className="toggle" onClick={toggleMenu}>
+        {/* <div className="toggle" onClick={toggleMenu}>
           <ion-icon name="menu-outline"></ion-icon>
-        </div>
+        </div> */}
         <div className="search">
-          <label>
+          {/* <label>
             <input type="text" placeholder="Search here" />
             <ion-icon name="search-outline"></ion-icon>
-          </label>
+          </label> */}
         </div>
 
         <div className="user">

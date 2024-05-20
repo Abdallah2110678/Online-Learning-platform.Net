@@ -6,7 +6,7 @@ import {
   Route,
   Outlet,
 } from "react-router-dom";
-import { QueryClient, QueryClientProvider } from "react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StoreProvider } from "./store";
 import ProtectedRoute from "./ProtectedRoute";
 import About from "./components/about/About";
@@ -24,7 +24,7 @@ import Aside_Student from "./components/common/asidebar-student/asidebar";
 import DASHBOARD from "./components/instructor-dashboard/Dashboard";
 
 import Aside_Admin from "./components/common/asidebar-admin/asidebar";
-import Dashboard from "./components/admin-dashboaerd/Dashboard";
+import Dashboard from "./components/admin-dashboaerd/";
 import EditFormStudent from "./components/admin-dashboaerd/Students/EditFormStudent";
 import AllStudents from "./components/admin-dashboaerd/Students/AllStudent";
 import AllUsers from "./components/admin-dashboaerd/Users/AllUsers";
@@ -135,8 +135,8 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/courses" element={<CourseHome />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route exact path="/sign-up" element={<SIGNUP />} />
-                <Route exact path="/login" element={<LOGIN />} />
+                <Route path="/sign-up" element={<SIGNUP />} />
+                <Route path="/login" element={<LOGIN />} />
                 <Route path="/userProfile" element={<UserProfile />} />
                 <Route path="/enroll/:id" element={<Enrolle />} />
               </Route>
