@@ -10,7 +10,6 @@ namespace Api.Data
         }
 
         // Define your DbSet properties here
-       public DbSet<User> User { get; set; }
         public DbSet<Cart> Cart { get; set; }
         public DbSet<Category> Categorie { get; set; }
         public DbSet<Course> Course { get; set; }
