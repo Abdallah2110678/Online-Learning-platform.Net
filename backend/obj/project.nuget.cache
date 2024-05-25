@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pPM4l2YEoo4=",
+  "dgSpecHash": "MPjiX9ORRyw=",
   "success": true,
-  "projectFilePath": "D:\\projects\\principles of software Design\\Online-Learning-platform.Net-4\\backend\\backend.csproj",
+  "projectFilePath": "D:\\projects\\principles of software Design\\Online-Learning-platform.Net-8\\backend\\backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Abdallah\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.5\\microsoft.aspnetcore.openapi.8.0.5.nupkg.sha512",
     "C:\\Users\\Abdallah\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

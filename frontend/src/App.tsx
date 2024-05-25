@@ -24,7 +24,7 @@ import Aside_Student from "./components/common/asidebar-student/asidebar";
 import DASHBOARD from "./components/instructor-dashboard/Dashboard";
 
 import Aside_Admin from "./components/common/asidebar-admin/asidebar";
-import Dashboard from "./components/admin-dashboaerd/";
+import Dashboard from "./components/admin-dashboaerd/Dashboard";
 import EditFormStudent from "./components/admin-dashboaerd/Students/EditFormStudent";
 import AllStudents from "./components/admin-dashboaerd/Students/AllStudent";
 import AllUsers from "./components/admin-dashboaerd/Users/AllUsers";
