@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Api.Models
+namespace backend.Models
 {
     public class Category
     {
@@ -10,6 +10,7 @@ namespace Api.Models
         public long Id { get; set; }
 
         [Required]
+        [StringLength(255)]
         public string Name { get; set; }
 
         public Category() { }

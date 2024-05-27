@@ -7,8 +7,7 @@ builder.Services.AddSwaggerGen();
 
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 22));
 builder.Services.AddDbContext<DbContext>(options =>
-     
-     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),serverVersion));
+options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), serverVersion));
 
 
 
