@@ -8,35 +8,38 @@ namespace backend.Models
 {
     public class User : IdentityUser
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public long Id { get; set; }
+        [Required]
+        public string FName { get; set; } = string.Empty;
 
-        public string FName { get; set; }
-        public string LName { get; set; }
+        [Required]
+        public string LName { get; set; } = string.Empty;
+
         public DateTime DOB { get; set; }
-        public string Gender { get; set; }
+
+        [Required]
+        public string Gender { get; set; } = string.Empty;
+
         public long Phone { get; set; }
 
         [Required]
-        public override string Email { get; set; }
+        public override string Email { get; set; } = string.Empty;
 
         [Required]
-        public override string PasswordHash { get; set; }  // Use PasswordHash from IdentityUser
+        public override string PasswordHash { get; set; } = string.Empty;
 
+        [Required]
         public Role Role { get; set; }
 
         public Dictionary<string, object> ToDictionary()
         {
-            var dict = new Dictionary<string, object>
+            return new Dictionary<string, object>
             {
                 { "id", this.Id },
                 { "first name", this.FName },
                 { "last name", this.LName },
                 { "email", this.Email },
-                { "role", this.Role }
+                { "role", this.Role.ToString() }
             };
-            return dict;
         }
     }
 }
