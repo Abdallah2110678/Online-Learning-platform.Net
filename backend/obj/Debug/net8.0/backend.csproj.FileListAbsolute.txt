@@ -244,3 +244,17 @@ D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend
 D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\obj\Debug\net8.0\backend.genruntimeconfig.cache
 D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\obj\Debug\net8.0\ref\backend.dll
 D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\projects\principles of software Design\Online-Learning-platform.Net-9\backend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
