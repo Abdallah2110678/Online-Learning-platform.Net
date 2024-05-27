@@ -55,15 +55,11 @@ function App() {
               <Route
                 path="/admin"
                 element={
-                  <ProtectedRoute
-                    element={
+                  
                       <>
                         <Aside_Admin />
                         <Outlet />
-                      </>
-                    }
-                    allowedRoles={["ADMIN"]}
-                  />
+                      </> 
                 }
               >
                 <Route path="dashboard" element={<Dashboard />} />
@@ -84,15 +80,12 @@ function App() {
               <Route
                 path="/student"
                 element={
-                  <ProtectedRoute
-                    element={
+                 
                       <>
                         <Aside_Student />
                         <Outlet />
                       </>
-                    }
-                    allowedRoles={["STUDENT"]}
-                  />
+                   
                 }
               >
                 <Route path="dashboard" element={<DASHBOARD />} />
@@ -103,15 +96,12 @@ function App() {
               <Route
                 path="/instructor"
                 element={
-                  <ProtectedRoute
-                    element={
+                  
                       <>
                         <Aside_Instructor />
                         <Outlet />
                       </>
-                    }
-                    allowedRoles={["INSTRUCTOR"]}
-                  />
+                   
                 }
               >
                 <Route path="dashboard" element={<DASHBOARD />} />

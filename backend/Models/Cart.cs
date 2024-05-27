@@ -14,7 +14,7 @@ namespace backend.Models
         public long UserId { get; set; }
 
         [ForeignKey("CourseId")]
-        public Course Course { get; set; }
+        public Course? Course { get; set; }
         public long CourseId { get; set; }
     }
 }

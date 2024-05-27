@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FHEQ9YpX6bdCHzMOAGfJPcC0QYviW/bKWk3/0KtJzWlDt59VF6bTaswGIfvFwvPg5IPUtJrLsQlFMWK4pBbBdg==",
+  "dgSpecHash": "WU3jd0EdybYrALigE2eDiwByqqK5ToAxw14zorjCf05mY7ZDkBx8jlBykyVNoTdyC0oIieMX24zdTFBlu2cpIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\hsoopa\\Desktop\\New folder (9)\\Online-Learning-platform.Net\\backend\\backend.csproj",
+  "projectFilePath": "C:\\Users\\hsoopa\\Desktop\\New folder (10)\\Online-Learning-platform.Net\\backend\\backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hsoopa\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\hsoopa\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
