@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\projects\\principles of software Design\\Online-Learning-platform.Net-11\\backend\\backend.csproj": {}
+    "D:\\projects\\principles of software Design\\Online-Learning-platform.Net-11\\backend\\backend.csproj": {}
   },
   "projects": {
-    "d:\\projects\\principles of software Design\\Online-Learning-platform.Net-11\\backend\\backend.csproj": {
+    "D:\\projects\\principles of software Design\\Online-Learning-platform.Net-11\\backend\\backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\projects\\principles of software Design\\Online-Learning-platform.Net-11\\backend\\backend.csproj",
+        "projectUniqueName": "D:\\projects\\principles of software Design\\Online-Learning-platform.Net-11\\backend\\backend.csproj",
         "projectName": "backend",
-        "projectPath": "d:\\projects\\principles of software Design\\Online-Learning-platform.Net-11\\backend\\backend.csproj",
+        "projectPath": "D:\\projects\\principles of software Design\\Online-Learning-platform.Net-11\\backend\\backend.csproj",
         "packagesPath": "C:\\Users\\Abdallah\\.nuget\\packages\\",
-        "outputPath": "d:\\projects\\principles of software Design\\Online-Learning-platform.Net-11\\backend\\obj\\",
+        "outputPath": "D:\\projects\\principles of software Design\\Online-Learning-platform.Net-11\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -25,6 +25,7 @@
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -115,6 +116,10 @@
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
               "version": "[7.5.2, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",

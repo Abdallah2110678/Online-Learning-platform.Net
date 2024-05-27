@@ -12,11 +12,10 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddScoped<ITokenService, TokenService>();
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 22));
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(
@@ -25,6 +24,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
         serverVersion
     )
 );
+
 builder
     .Services.AddControllers()
     .AddJsonOptions(options =>
@@ -46,6 +46,8 @@ builder
             .Ignore;
         options.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented;
     });
+
+
 builder
     .Services.AddIdentity<User, IdentityRole>(options =>
     {
@@ -81,16 +83,10 @@ builder
             )
         };
     });
-builder.Services.AddControllers();
 
 builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("Admin", policy => policy.RequireRole("Admin"));
-});
-
-app.UseCors(options =>
-{
-    options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
 });
 
 var app = builder.Build();
@@ -101,7 +97,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+app.UseCors(options =>
+{
+    options.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
+});
 
 app.UseAuthentication();
 
@@ -110,4 +109,7 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.MapFallbackToFile("/index.html");
+
+app.UseHttpsRedirection();
+
 app.Run();

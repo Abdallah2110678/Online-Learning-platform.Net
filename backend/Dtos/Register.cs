@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using backend.Services;
 using backend.Models;
 
 
@@ -29,6 +30,6 @@ namespace backend.Dtos
         [Required]
         public string? Password { get; set; }
 
-        public Role? Role { get; set; }
+        public string? Role { get; set; }
     }
 }

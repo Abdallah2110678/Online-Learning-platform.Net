@@ -9,7 +9,6 @@ using backend.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-
 namespace backend.Services
 {
     public class TokenService : ITokenService
