@@ -4,13 +4,13 @@ using System.Text.Json.Serialization;
 
 namespace backend.Models
 {
-   public class Category
+    public class VideoCourse
     {
         public long Id { get; set; }
-        public string? Name { get; set; }
-
-        // Navigation property
+        public string? Title { get; set; }
+        public string? PathOfVideo { get; set; }
+        public long CourseId { get; set; }
          [JsonIgnore]
-        public ICollection<Course>? Courses { get; set; }
+        public Course? Course { get; set; }
     }
 }
