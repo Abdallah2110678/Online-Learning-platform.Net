@@ -13,6 +13,6 @@ namespace backend.Dtos
         public double Price { get; set; }
         public DateTime Date { get; set; }
         public string? CategoryName { get; set; }
-        public List<VideoCourseDto> VideoCourses { get; set; }
+        public List<VideoCourseDto>? VideoCourses { get; set; }
     }
 }
