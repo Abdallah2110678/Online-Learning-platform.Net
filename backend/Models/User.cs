@@ -14,21 +14,19 @@ namespace backend.Models
         [Required]
         public string LName { get; set; } = string.Empty;
 
-        public DateTime DOB { get; set; }
+        public DateTime? DOB { get; set; }
 
         [Required]
         public string Gender { get; set; } = string.Empty;
 
-        public long Phone { get; set; }
+        public string? Phone { get; set; }
 
         [Required]
         public override string Email { get; set; } = string.Empty;
+        public string? Role { get; set; }
 
         [Required]
         public override string PasswordHash { get; set; } = string.Empty;
-
-        [Required]
-        public Role Role { get; set; }
 
         public Dictionary<string, object> ToDictionary()
         {
@@ -37,8 +35,7 @@ namespace backend.Models
                 { "id", this.Id },
                 { "first name", this.FName },
                 { "last name", this.LName },
-                { "email", this.Email },
-                { "role", this.Role.ToString() }
+                { "email", this.Email }
             };
         }
     }
