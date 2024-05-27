@@ -39,9 +39,28 @@ namespace backend.Data
                 new Category { Id = 2, Name = "Health & Fitness" },
                 new Category { Id = 3, Name = "Marketing" },
                 new Category { Id = 4, Name = "Graphic Design" },
-                new Category { Id = 5, Name = "Blockchain" }
+                new Category { Id = 5, Name = "Blockchain" },
+
+                base.OnModelCreating(Builder);
+            List<IdentityRole> roles = new List<IdentityRole>{
+                new IdentityRole
+                {
+                Name="Admin",
+                NormalizedName="ADMIN",
+                },
+                new IdentityRole
+                {
+                Name="Student",
+                NormalizedName="STUDENT",
+                },
+                new IdentityRole
+                {
+                Name="Instructor",
+                NormalizedName="INSTRUCTOR",
+                }
+            };
+            Builder.Entity<IdentityRole>().HasData(roles);
             );
-        }
     }
 }
 
