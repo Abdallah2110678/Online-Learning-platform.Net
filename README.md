@@ -51,10 +51,10 @@ LearningHub is built using a combination of frontend and backend technologies to
 
 ### Backend Technologies:
 
-- **Spring Boot:** A Java-based framework for building robust web applications.
-- **Spring Data JPA:** For database access and manipulation.
-- **Spring Security:** For implementing authentication and authorization.
-- **MySQL:** The relational database management system used for data storage.
+- **ASP.NET:** A framework for building robust web applications using C#.
+- **Entity Framework:** For database access and manipulation.
+- **ASP.NET Identity:** For implementing authentication and authorization.
+- **SQL Server:** The relational database management system used for data storage.
 
 ### Other Technologies:
 
